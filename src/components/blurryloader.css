@@ -1,0 +1,28 @@
+.blurry-loader {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  .blurry-loader img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+  }
+  
+  .loading-text {
+    position: absolute;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+  
