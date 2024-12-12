@@ -8,7 +8,7 @@ const data = [
         mevent: "Live At The Garden",
         type: "CD",
         price: 25,
-        image: '../../public/images/billy-joel-cd.png',
+        image: '../images/billy-joel-cd.png',
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ const data = [
         mevent: "Live At The Garden",
         type: "T-Shirt",
         price: 45,
-        image: "../../public/images/billy-joel-tshirt.png",
+        image: "../images/billy-joel-tshirt.png",
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ const data = [
         mevent: "Live At The Garden",
         type: "Signed Poster",
         price: 100,
-        image: "../../public/images/billy-joel-poster.png",
+        image: "../images/billy-joel-poster.png",
     },
     {
         id: 4,
@@ -38,7 +38,7 @@ const data = [
         mevent: "VULTURES LISTENING PARTY",
         type: "CD",
         price: 20,
-        image: "../../public/images/vultures-kanye-cd.png",
+        image: "../images/vultures-kanye-cd.png",
     },
     {
         id: 5,
@@ -48,7 +48,7 @@ const data = [
         mevent: "VULTURES LISTENING PARTY",
         type: "T-Shirt",
         price: 30,
-        image: "../../public/images/vultures-kanye-tshirt.png",
+        image: "../images/vultures-kanye-tshirt.png",
     },
     {
         id: 6,
@@ -58,7 +58,7 @@ const data = [
         mevent: "VULTURES LISTENING PARTY",
         type: "Signed Poster",
         price: 120,
-        image: "../../public/images/vultures-kanye-poster.png",
+        image: "../images/vultures-kanye-poster.png",
     },
     {
         id: 7,
@@ -68,7 +68,7 @@ const data = [
         mevent: "It's All A Blur Tour",
         type: "CD",
         price: 25,
-        image: "../../public/images/drake-cd.png",
+        image: "../images/drake-cd.png",
     },
     {
         id: 8,
@@ -78,7 +78,7 @@ const data = [
         mevent: "It's All A Blur Tour",
         type: "T-Shirt",
         price: 40,
-        image: "../../public/images/drake-tshirt.png",
+        image: "../images/drake-tshirt.png",
     },
     {
         id: 9,
@@ -88,7 +88,7 @@ const data = [
         mevent: "It's All A Blur Tour",
         type: "Signed Poster",
         price: 150,
-        image: "../../public/images/drake-poster.png",
+        image: "../images/drake-poster.png",
     },
     {
         id: 10,
@@ -98,7 +98,7 @@ const data = [
         mevent: "GUTS World Tour",
         type: "CD",
         price: 20,
-        image: "../../public/images/olivia-rodrigo-cd.png",
+        image: "../images/olivia-rodrigo-cd.png",
     },
     {
         id: 11,
@@ -108,7 +108,7 @@ const data = [
         mevent: "GUTS World Tour",
         type: "T-Shirt",
         price: 40,
-        image: "../../public/images/olivia-rodrigo-tshirt.png",
+        image: "../images/olivia-rodrigo-tshirt.png",
     },
     {
         id: 12,
@@ -118,7 +118,7 @@ const data = [
         mevent: "GUTS World Tour",
         type: "Signed Poster",
         price: 450,
-        image: "../../public/images/olivia-rodrigo-poster.png",
+        image: "../images/olivia-rodrigo-poster.png",
     },
     {
         id: 13,
@@ -128,7 +128,7 @@ const data = [
         mevent: "Hackney Diamonds Tour",
         type: "CD",
         price: 14,
-        image: "../../public/images/rolling-stones-cd.png",
+        image: "../images/rolling-stones-cd.png",
     },
     {
         id: 14,
@@ -138,7 +138,7 @@ const data = [
         mevent: "Hackney Diamonds Tour",
         type: "T-Shirt",
         price: 50,
-        image: "../../public/images/rolling-stones-tshirt.png",
+        image: "../images/rolling-stones-tshirt.png",
     },
     {
         id: 15,
@@ -148,7 +148,7 @@ const data = [
         mevent: "Hackney Diamonds Tour",
         type: "Signed Poster",
         price: 270,
-        image: "../../public/images/rolling-stones-poster.png",
+        image: "../images/rolling-stones-poster.png",
     },
     {
         id: 16,
@@ -158,7 +158,7 @@ const data = [
         mevent: "The Forget Tomorrow World Tour",
         type: "CD",
         price: 14,
-        image: "../../public/images/justin-timberlake-cd.png",
+        image: "../images/justin-timberlake-cd.png",
     },
     {
         id: 17,
@@ -168,7 +168,7 @@ const data = [
         mevent: "The Forget Tomorrow World Tour",
         type: "T-Shirt",
         price: 28,
-        image: "../../public/images/justin-timberlake-tshirt.png",
+        image: "../images/justin-timberlake-tshirt.png",
     },
     {
         id: 18,
@@ -178,7 +178,7 @@ const data = [
         mevent: "The Forget Tomorrow World Tour",
         type: "Signed Poster",
         price: 100,
-        image: "../../public/images/justin-timberlake-poster.png",
+        image: "../images/justin-timberlake-poster.png",
     },
     {
         id: 19,
@@ -188,7 +188,7 @@ const data = [
         mevent: "Growin' Up And Gettin' Old Tour",
         type: "CD",
         price: 14,
-        image: "../../public/images/luke-combs-cd.png",
+        image: "../images/luke-combs-cd.png",
     },
     {
         id: 20,
@@ -198,7 +198,7 @@ const data = [
         mevent: "Growin' Up And Gettin' Old Tour",
         type: "T-Shirt",
         price: 30,
-        image: "../../public/images/luke-combs-tshirt.png",
+        image: "../images/luke-combs-tshirt.png",
     },
     {
         id: 21,
@@ -208,7 +208,7 @@ const data = [
         mevent: "Growin' Up And Gettin' Old Tour",
         type: "Signed Poster",
         price: 200,
-        image: "../../public/images/luke-combs-poster.png",
+        image: "../images/luke-combs-poster.png",
     },
     {
         id: 22,
@@ -218,7 +218,7 @@ const data = [
         mevent: "Think Later Tour",
         type: "CD",
         price: 20,
-        image: "../../public/images/tate-mcrae-cd.png",
+        image: "../images/tate-mcrae-cd.png",
     },
     {
         id: 23,
@@ -228,7 +228,7 @@ const data = [
         mevent: "Think Later Tour",
         type: "T-Shirt",
         price: 50,
-        image: "../../public/images/tate-mcrae-tshirt.png",
+        image: "../images/tate-mcrae-tshirt.png",
     },
     {
         id: 24,
@@ -238,7 +238,7 @@ const data = [
         mevent: "Think Later Tour",
         type: "Signed Poster",
         price: 350,
-        image: "../../public/images/tate-mcrae-poster.png",
+        image: "../images/tate-mcrae-poster.png",
     },
     {
         id: 25,
@@ -248,7 +248,7 @@ const data = [
         mevent: "Sweat",
         type: "CD",
         price: 25,
-        image: "../../public/images/charli-troye-cd.png",
+        image: "../images/charli-troye-cd.png",
     },
     {
         id: 26,
@@ -258,7 +258,7 @@ const data = [
         mevent: "Sweat",
         type: "T-Shirt",
         price: 50,
-        image: "../../public/images/charli-troye-tshirt.png",
+        image: "../images/charli-troye-tshirt.png",
     },
     {
         id: 27,
@@ -268,7 +268,7 @@ const data = [
         mevent: "Sweat",
         type: "Signed Poster",
         price: 60,
-        image: "../../public/images/charli-troye-poster.png",
+        image: "../images/charli-troye-poster.png",
     },
     {
         id: 28,
@@ -278,7 +278,7 @@ const data = [
         mevent: "One Night Only in Utopia",
         type: "CD",
         price: 20,
-        image: "../../public/images/travis-scott-cd.png",
+        image: "../images/travis-scott-cd.png",
     },
     {
         id: 29,
@@ -288,7 +288,7 @@ const data = [
         mevent: "One Night Only in Utopia",
         type: "T-Shirt",
         price: 50,
-        image: "../../public/images/travis-scott-tshirt.png",
+        image: "../images/travis-scott-tshirt.png",
     },
     {
         id: 30,
@@ -298,7 +298,7 @@ const data = [
         mevent: "One Night Only in Utopia",
         type: "Signed Poster",
         price: 70,
-        image: "../../public/images/travis-scott-poster.png",
+        image: "../images/travis-scott-poster.png",
     },
     {
         id: 31,
@@ -308,7 +308,7 @@ const data = [
         mevent: "Hit Me Hard and Soft: The Tour",
         type: "CD",
         price: 25,
-        image: "../../public/images/billie-eilish-cd.png",
+        image: "../images/billie-eilish-cd.png",
     },
     {
         id: 32,
@@ -318,7 +318,7 @@ const data = [
         mevent: "Hit Me Hard and Soft: The Tour",
         type: "T-Shirt",
         price: 100,
-        image: "../../public/images/billie-eilish-tshirt.png",
+        image: "../images/billie-eilish-tshirt.png",
     },
     {
         id: 33,
@@ -328,7 +328,7 @@ const data = [
         mevent: "Hit Me Hard and Soft: The Tour",
         type: "Signed Poster",
         price: 370,
-        image: "../../public/images/billie-eilish-poster.png",
+        image: "../images/billie-eilish-poster.png",
     },
     {
         id: 34,
@@ -338,7 +338,7 @@ const data = [
         mevent: "IHeartRadio Jingle Ball",
         type: "Tickets",
         price: 750,
-        image: "../../public/images/jingle-ball-tickets.png",
+        image: "../images/jingle-ball-tickets.png",
     },
     {
         id: 35,
@@ -348,7 +348,7 @@ const data = [
         mevent: "IHeartRadio Jingle Ball",
         type: "T-Shirt",
         price: 25,
-        image: "../../public/images/jingle-ball-tshirt.png",
+        image: "../images/jingle-ball-tshirt.png",
     },
     {
         id: 36,
@@ -358,7 +358,7 @@ const data = [
         mevent: "IHeartRadio Jingle Ball",
         type: "Wheezer Backstage Passes",
         price: 1250,
-        image: "../../public/images/jingle-ball-poster.png",
+        image: "../images/jingle-ball-poster.png",
     }
 ];
 
