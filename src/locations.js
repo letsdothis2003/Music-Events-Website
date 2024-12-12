@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-// Sample concert data
 const concertsData = [
     {
         month: "January",
@@ -38,7 +37,6 @@ const concertsData = [
             { id: 9, type: "Signed Poster", price: 150, image: "/images/drake-poster.png" },
         ],
     },
-    // Add other concert data with location field
 ];
 
 const LocationCard = ({ location, concerts }) => {
@@ -88,8 +86,7 @@ const LocationCard = ({ location, concerts }) => {
 };
 
 const Locations = () => {
-    // Group concerts by location
-    const locations = ['Manhattan', 'Queens']; // Add more locations as needed
+    const locations = ['Manhattan', 'Queens']; 
     const groupedConcerts = locations.reduce((acc, location) => {
         acc[location] = concertsData.filter(concert => concert.location === location);
         return acc;
@@ -109,4 +106,5 @@ const Locations = () => {
 };
 
 export default Locations;
+
 
