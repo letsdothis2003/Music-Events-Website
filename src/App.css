@@ -1,7 +1,8 @@
 /* General Styles */
 .App {
   text-align: center;
-  background-color: blue; /* Apply blue background to entire app */
+  background-color: #99cada; /* Apply blue background to entire app */
+  height:100%
 }
 
 .App-logo {

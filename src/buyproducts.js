@@ -1,41 +1,78 @@
-import React from "react";
-import concerts from "./concerts"; // Import concerts.js
-import "./App.css";
+import Navigation from './Navigation/Nav';
+import Products from './Products/Products';
+import SideBar from './SideBar/SideBar';
+import {useState} from 'react';
+import Card from './components/card'
 
-function BuyProducts() {
-    return (
-        <div className="BuyProducts">
-            <h1>End of the Year Sale</h1>
-            {concerts.map((concert) => (
-                <div key={concert.month}>
-                    <h2>
-                        {concert.month}: {concert.venue}, {concert.artist}
-                    </h2>
-                    <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-                        {concert.products.map((product) => (
-                            <div
-                                key={product.id}
-                                style={{
-                                    border: "1px solid #ddd",
-                                    padding: "10px",
-                                    textAlign: "center",
-                                }}
-                            >
-                                <img
-                                    src={product.image} // Ensure this matches the "/images/" path
-                                    alt={product.type}
-                                    style={{ width: "150px", height: "150px", objectFit: "cover" }}
-                                />
-                                <p>{product.type}</p>
-                                <p>Price: ${product.price}</p>
-                                <button>Add to Cart</button>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            ))}
-        </div>
-    );
+import merch from './db/data'
+
+function App() {
+
+  const[selectedCategory, setSelectedCategory] = useState(null)
+
+  //Input Filter
+  const[query, setQuery] = useState("")
+
+  const handleInputChange = event => {
+    setQuery(event.target.value)
+  }
+
+  const filteredItems = merch.filter(merch => merch.artist.toLowerCase().indexOf(query.toLowerCase()!== -1));
+
+  //Radio Filters
+  
+const handleChange = (event) =>{
+  setSelectedCategory(event.target.value);
+}
+//Buttons
+const handleClick = (event) => {
+  setSelectedCategory(event.target.value);
+};
+
+function filteredData(merch, selected, query){
+  let filteredMerch = merch
+
+  //filter input
+  if(query){
+    filteredMerch = filteredItems
+  }
+
+  //selected
+  if (selected){
+    filteredMerch = filteredMerch.filter(
+      ({type, price, mevent, month}) =>
+        type === selected ||
+        price === selected ||
+        mevent === selected ||
+        month === selected
+      );
+  }
+
+  return filteredMerch.map(({id, month, venue, artist, mevent, type, price, image}) =>(
+    <Card 
+    key = {id}
+    image = {image}
+    month = {month}
+    venue = {venue}
+    artist = {artist}
+    mevent = {mevent}
+    type = {type}
+    price = {price}
+    />
+  ));
+
+};
+
+const result = filteredData(merch, selectedCategory, query)
+  
+  return (
+    <div>
+      <SideBar handleChange={handleChange} />
+      <Navigation query ={query} handleInputchange = {handleInputChange}/>
+      <Products result = {result}/>
+      
+    </div>
+  );
 }
 
-export default BuyProducts;
+export default App;

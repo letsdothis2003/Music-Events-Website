@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
+import './navbar.css'
 import siteLogo from './Images/sitelogo.png';
 
 function Navbar() {
