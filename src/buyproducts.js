@@ -34,7 +34,7 @@ function filteredData(merch, selected, query){
 
   //filter input
   if(query){
-    filteredMerch = filteredItems
+    filteredMerch = filteredItems;
   }
 
   //selected
@@ -68,7 +68,7 @@ const result = filteredData(merch, selectedCategory, query)
   return (
     <div>
       <SideBar handleChange={handleChange} />
-      <Navigation query ={query} handleInputchange = {handleInputChange}/>
+      <Navigation query ={query} handleInputChange = {handleInputChange}/>
       <Products result = {result}/>
       
     </div>
